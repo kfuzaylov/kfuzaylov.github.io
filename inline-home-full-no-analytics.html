@@ -3424,15 +3424,14 @@ c(f);for(var e=0;e<a.length;e+=1)g(a[e]).c(d(e),b)})}function B(a){return new d(
 </script>
 <script>
 	window.addEventListener('load', function() {
-		setTimeout(function() {
+		setTimeout(function () {
 			const iframe = document.createElement('iframe');
-
 			document.body.appendChild(iframe);
-
 			const iframeDocument = iframe.contentDocument || iframe.contentWindow.document;
 
-			$(iframeDocument.body).append('<link rel="preload" href="//fonts.googleapis.com/css?family=Montserrat:italic,normal,lighter,700,800" as="style">');
-			$(iframeDocument.body).append('<link rel="preload" href="//cdn-tp1.df-tp.com/e6-static-37/stylesheets/disclaimer_css-styles-5aa569319ed84c92bb870ae84051380c.css" as="style">');
+			iframeDocument.open();
+			iframeDocument.write('<link rel="stylesheet" href="https://cdn-tp1.df-tp.com/e6-static-37/stylesheets/flyOutPanel_css-fly-out-panel-69a59b862c7aea10fa44f9fa363a8baf.css"><link rel="stylesheet" href="https://cdn-tp1.df-tp.com/e6-static-37/stylesheets/announcement-bar-cfc84da87c0b6754938ddebbc32102e4.css">');
+			iframeDocument.close();
 		}, 10000);
 	});
 </script>
