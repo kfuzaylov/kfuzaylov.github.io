@@ -3424,14 +3424,16 @@ c(f);for(var e=0;e<a.length;e+=1)g(a[e]).c(d(e),b)})}function B(a){return new d(
 </script>
 <script>
 	window.addEventListener('load', function() {
-		const iframe = document.createElement('iframe');
+		setTimeout(function() {
+			const iframe = document.createElement('iframe');
 
-		document.body.appendChild(iframe);
+			document.body.appendChild(iframe);
 
-		const iframeDocument = iframe.contentDocument || iframe.contentWindow.document;
+			const iframeDocument = iframe.contentDocument || iframe.contentWindow.document;
 
-		$(iframeDocument).append('<link rel="preload" href="//fonts.googleapis.com/css?family=Montserrat:italic,normal,lighter,700,800" as="style">');
-		$(iframeDocument).append('<link rel="preload" href="//cdn-tp1.df-tp.com/e6-static-37/stylesheets/disclaimer_css-styles-5aa569319ed84c92bb870ae84051380c.css" as="style">');
+			$(iframeDocument.body).append('<link rel="preload" href="//fonts.googleapis.com/css?family=Montserrat:italic,normal,lighter,700,800" as="style">');
+			$(iframeDocument.body).append('<link rel="preload" href="//cdn-tp1.df-tp.com/e6-static-37/stylesheets/disclaimer_css-styles-5aa569319ed84c92bb870ae84051380c.css" as="style">');
+		}, 10000);
 	});
 </script>
 </body>
