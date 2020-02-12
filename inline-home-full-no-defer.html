@@ -3210,14 +3210,6 @@ Volkswagen Building,&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbs
 	window.dtm = {};
 	window.dtm['afterModulesInit.js'] = [];
 	window.dtm['onAjaxSuccess.js'] = [];
-</script><script>
-	window.dtm['afterModulesInit.js'].push(function(pageObject) {
-		(function (pageObject, tagConfig) {
-			'use strict';
-
-			Moff.leftovers.push('//integrator.swipetospin.com'); //load Spincar
-		})(pageObject, '');
-	});
 </script>
 <script>
 	document.body.addEventListener('cssloaded', function() {
@@ -3251,6 +3243,7 @@ c(f);for(var e=0;e<a.length;e+=1)g(a[e]).c(d(e),b)})}function B(a){return new d(
 <script src="//cdn-ds.com/e6-static/javascripts/node_list_for_each_polyfill_js-pollyfill-ie11-nodelist-foreach.es6-d404074ee6946191d4e7091efc22cd9f.js"></script>
 <script src="//cdn-ds.com/e6-static/javascripts/node_remove_pollyfill_js-pollyfill-ie11-node-remove.es6-8dc8563b8af82bfae204f7ea106d7e37.js"></script>
 <script src="//cdn-ds.com/e6-static/javascripts/moff_js-moff-3465b71a42b457c8d8b4ee8a2c6a7dc6.js"></script>
+<script src="/moff-leftovers.js"></script>
 <script src="//cdn-ds.com/e6-static/javascripts/moff_js-keys.es6-b42629cb20c34af1001867f094aadf4e.js"></script>
 <script src="//cdn-ds.com/e6-static/javascripts/moff_js-module.es6-6e1955b7411bfb53172415e7cc4ce1a6.js"></script>
 <script src="//cdn-ds.com/e6-static/javascripts/moff_js-modules.es6-387307be1c04a3de14087c104883c6b3.js"></script>
@@ -3310,8 +3303,16 @@ c(f);for(var e=0;e<a.length;e+=1)g(a[e]).c(d(e),b)})}function B(a){return new d(
 <script src="//cdn-ds.com/e6-static/javascripts/appointmentWidget_js-appointment-widget.es6-fd909fb6248cd28c9e67a9b4c697ae4f.js"></script>
 <script src="//cdn-ds.com/e6-static/javascripts/form.es6-0db4c1ed0b0d4e126a8a0af00f7f5899.js"></script>
 <script src="//cdn-ds.com/e6-static/javascripts/google-map.es6-2bd73d0052f9e0fae5da40e736bd6a8e.js"></script>
-<script src="//cdn-ds.com/e6-static/javascripts/socialLink_js-business-logic.es6-ec902f19330224eae3077b56eaee6e63.js"></script>
-<script src="//cdn-ds.com/e6-static/javascripts/inlineJsHelper_js-inlineJsHelper.es6-04a603a3c5a534813208de06ca157b3c.js"></script>
+<script src="/socialLink_js-business-logic.es6-ec902f19330224eae3077b56eaee6e63.js"></script>
+<script>
+	window.dtm['afterModulesInit.js'].push(function(pageObject) {
+		(function (pageObject, tagConfig) {
+			'use strict';
+
+			Moff.leftovers.push('//integrator.swipetospin.com'); //load Spincar
+		})(pageObject, '');
+	});
+</script>
 <script>
 	function recaptchaLoad() {
 		document.body.dataset.recaptchaLoaded = true;
@@ -3322,8 +3323,6 @@ c(f);for(var e=0;e<a.length;e+=1)g(a[e]).c(d(e),b)})}function B(a){return new d(
 	}
 </script>
 <script>
-	Moff.leftovers = [];
-
 	if (localStorage.getItem('googleFontsUrl')) {
 		JSON.parse(localStorage.getItem('googleFontsUrl')).forEach(function(url){
 			var googleFontsLink = document.createElement('link');
